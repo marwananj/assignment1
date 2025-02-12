@@ -1,0 +1,73 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  /* Add your header styles here */
+  header {
+    background-color: #333; /* Dark background */
+    padding: 15px 0;
+    width: 100%;
+  }
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-left:-20%;
+
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Adds spacing between links */
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+    padding: 10px;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+    color: #f4a51c; /* Orange highlight */
+}
+
+  /* Add your hero section styles here */
+
+  /* Add your about section styles here */
+
+  /* Add your projects section styles here */
+
+  /* Add your contact form styles here */
+
+  /* Add your footer styles here */
+
+  /* Add your responsive design styles here */
