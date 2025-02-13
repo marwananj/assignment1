@@ -28,13 +28,13 @@ nav {
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-left: -180px;
+  margin-left: -180px; /* Restores the negative margin for the logo */
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  margin-right: -180px;
+  margin-right: -180px; /* Aligns nav items to match the logo position */
 }
 
 .nav-links li {
@@ -51,7 +51,10 @@ nav {
 .hero {
   background-color: #f89c1c;
   color: white;
-  padding: 50px 20px;
+  padding: 50px 40px; /* Adds space inside the Hero section */
+  margin-left: 20px; /* Adds space to the left of the Hero section */
+  margin-right: 20px; /* Adds space to the right of the Hero section */
+  margin-top: 20px; /* Adds space between Navbar and Hero */
 }
 
 .hero h1 {
@@ -92,38 +95,37 @@ nav {
   margin: 10px auto;
 }
 
-  /* Add your projects section styles here */
+/* Projects Section */
 .projects {
-    padding: 50px 20px;
+  padding: 50px 20px;
 }
 
 .projects h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
 .project-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
 }
 
 .project {
-    background: #f8f8f8;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 200px;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
 }
 
 .project h3 {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
+/* Add your contact form styles here */
 
-  /* Add your contact form styles here */
+/* Add your footer styles here */
 
-  /* Add your footer styles here */
-
-  /* Add your responsive design styles here */
+/* Add your responsive design styles here */
