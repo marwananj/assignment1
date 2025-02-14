@@ -286,25 +286,3 @@ footer {
   }
 }
 
-@media (max-width: 480px) {
-  /* Adjust font size for very small screens */
-  .hero h1 {
-    font-size: 1.5rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .about h2, .projects h2, .testimonials h2 {
-    font-size: 1.5rem;
-  }
-
-  .contact input, .contact textarea {
-    padding: 12px;
-  }
-
-  .contact button {
-    padding: 12px;
-  }
-}
