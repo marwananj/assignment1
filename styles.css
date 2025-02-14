@@ -229,8 +229,9 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  /* Navbar - Stacked */
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
   .nav-links {
     display: block;
     margin-top: 15px;
@@ -242,10 +243,64 @@ footer {
   }
 
   .logo {
-    margin-left: 0; /* Remove negative margin for smaller screens */
+    margin-left: 0; 
+    font-size: 1.2rem; 
   }
 
-  /* Hero Section */
+  .hero {
+    padding: 30px 15px;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .testimonial-card {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .contact form {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  footer {
+    padding: 10px 0;
+  }
+}
+
+/* Tablet (max-width: 768px) */
+@media (max-width: 768px) {
+  .nav-links {
+    display: block;
+    margin-top: 15px;
+  }
+
+  .nav-links li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    margin-left: 0;
+    font-size: 1.4rem;
+  }
+
   .hero {
     padding: 40px 20px;
   }
@@ -258,18 +313,16 @@ footer {
     font-size: 1.1rem;
   }
 
-  /* Project Cards - Stack on Small Screens */
   .project-list {
     flex-direction: column;
     align-items: center;
   }
 
   .project {
-    width: 90%; /* Take up more width on smaller screens */
+    width: 90%;
     margin-bottom: 20px;
   }
 
-  /* Testimonials Section */
   .testimonial-card {
     max-width: 100%;
     padding: 20px;
@@ -280,9 +333,53 @@ footer {
     padding: 10px;
   }
 
-  /* Footer */
   footer {
     padding: 10px 0;
   }
 }
 
+/* Desktop (min-width: 769px) */
+@media (min-width: 769px) {
+  .nav-links {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  .hero {
+    padding: 50px 40px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .project-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .project {
+    width: 200px;
+  }
+
+  .testimonial-card {
+    max-width: 600px;
+    padding: 30px;
+  }
+
+  .contact form {
+    max-width: 400px;
+  }
+
+  footer {
+    padding: 15px 0;
+  }
+}
