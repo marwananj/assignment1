@@ -1,81 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My personal portfolio to showcase my skills and projects as a web developer.">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<header>
-    <nav>
-        <div class="logo">MyPortfolio</div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <nav>
+            <div class="logo" aria-label="My Portfolio Logo">MyPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main>
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Welcome to My Portfolio</h1>
-        <p>I'm a passionate developer exploring the world of code.</p>
-        <a href="#projects" class="btn">View Projects</a>
-    </section>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm a passionate developer exploring the world of code.</p>
+            <a href="#projects" class="btn">View Projects</a>
+        </section>
 
-    <!-- About Me -->
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm a web developer with a love for building creative and user-friendly websites. With a strong foundation in HTML, CSS, and JavaScript, I aim to create engaging online experiences.</p>
-    </section>
-    
-  <!-- Add your projects section here -->
-<section id="projects" class="projects">
-        <h2>My Projects</h2>
-        <div class="project-list">
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Description of the first project.</p>
+        <!-- About Me -->
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm a web developer with a love for building creative and user-friendly websites. With a strong
+                foundation in HTML, CSS, and JavaScript, I aim to create engaging online experiences.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <h2>My Projects</h2>
+            <div class="project-list">
+                <div class="project">
+                    <h3>Project 1</h3>
+                    <p>Description of the first project.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 2</h3>
+                    <p>Description of the second project.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 3</h3>
+                    <p>Description of the third project.</p>
+                </div>
             </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Description of the second project.</p>
-            </div>
-            <div class="project">
-                <h3>Project 3</h3>
-                <p>Description of the third project.</p>
-            </div>
-        </div>
-    </section>
-<!-- Testimonials Section -->
-<section id="testimonials" class="testimonials">
-    <h2>What People Say</h2>
-    <div class="testimonial-card">
-        <div class="testimonial-img">User Pic</div>
-        <p class="testimonial-text">"This is the best service I have ever used!"</p>
-        <span class="testimonial-author">- Jane Doe</span>
-    </div>
-</section>
+        </section>
 
-    <!-- Add your contact form section here -->
-<section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-    </form>
-</section>
-  </main>
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <h2>What People Say</h2>
+            <div class="testimonial-card">
+                <div class="testimonial-img">User Pic</div>
+                <p class="testimonial-text">"This is the best service I have ever used!"</p>
+                <span class="testimonial-author">- Jane Doe</span>
+            </div>
+        </section>
 
-  <!-- Add your footer here -->
-<footer>
-    <p>&copy; 2025 MyPortfolio. All Rights Reserved.</p>
-</footer>
-  <script src="index.js"></script>
+        <!-- Contact Form Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 MyPortfolio. All Rights Reserved.</p>
+    </footer>
+
+    <!-- EmailJS -->
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script src="index.js"></script>
+
 </body>
+
 </html>
