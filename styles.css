@@ -230,59 +230,195 @@ footer {
 
 /* Responsive Design */
 
-/* Mobile (max-width: 280px) */
-@media (max-width: 280px) {
-  .nav-links {
-    display: block;
-    margin-top: 10px;
+/* Mobile (max-width: 360px) */
+@media (max-width: 360px) {
+  /* Global */
+  body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
   }
 
-  .nav-links li {
-    margin-left: 0;
-    margin-bottom: 10px;
+  body {
+    background-color: #f8f8f8;
+    text-align: center;
+    font-size: 0.8rem; /* Smaller base font size */
+  }
+
+  /* Navbar */
+  header {
+    background: #333;
+    padding: 10px 0; /* Reduced padding */
   }
 
   .logo {
-    margin-left: 0; 
-    font-size: 1.2rem; 
+    font-size: 1rem; /* Smaller logo font size */
+    margin-left: 0;
   }
 
+  .nav-links {
+    display: block;
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  .nav-links li {
+    margin: 0;
+    padding: 5px;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem; /* Smaller link font size */
+    padding: 5px 10px;
+  }
+
+  /* Hero Section */
   .hero {
-    padding: 30px 15px;
+    background-color: #f89c1c;
+    color: white;
+    padding: 15px 10px; /* Reduced padding */
   }
 
   .hero h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem; /* Smaller heading */
   }
 
   .hero p {
-    font-size: 1rem;
+    font-size: 0.9rem; /* Smaller paragraph text */
+  }
+
+  .btn {
+    font-size: 0.8rem; /* Smaller button font size */
+    padding: 8px 16px; /* Smaller button size */
+  }
+
+  /* About Section */
+  .about {
+    background: white;
+    padding: 20px 10px; /* Smaller padding */
+  }
+
+  .about h2 {
+    font-size: 1.4rem; /* Smaller heading */
+  }
+
+  .about p {
+    font-size: 0.8rem; /* Smaller paragraph text */
+    max-width: 100%; /* Ensure the text doesn't overflow */
+    padding: 5px;
+  }
+
+  /* Projects Section */
+  .projects {
+    padding: 20px 10px; /* Smaller padding */
+  }
+
+  .projects h2 {
+    font-size: 1.4rem; /* Smaller heading */
   }
 
   .project-list {
-    flex-direction: column;
-    align-items: center;
+    display: block; /* Stack project cards vertically */
+    justify-content: center;
+    gap: 10px;
   }
 
   .project {
-    width: 90%;
-    margin-bottom: 20px;
+    width: 90%; /* Full width with margin for small screens */
+    padding: 15px;
+    font-size: 0.8rem; /* Smaller font size for projects */
+  }
+
+  .project h3 {
+    font-size: 1rem; /* Smaller project heading */
+  }
+
+  /* Testimonials Section */
+  .testimonials {
+    background: #f4f4f4;
+    padding: 20px 10px;
+  }
+
+  .testimonials h2 {
+    font-size: 1.4rem; /* Smaller heading */
   }
 
   .testimonial-card {
     max-width: 100%;
-    padding: 20px;
+    padding: 15px; /* Smaller padding */
+    font-size: 0.8rem; /* Smaller text for testimonials */
+  }
+
+  .testimonial-img {
+    width: 60px;
+    height: 60px;
+    font-size: 0.8rem; /* Smaller image size */
+  }
+
+  .testimonial-text {
+    font-style: italic;
+    font-size: 0.9rem; /* Smaller testimonial text */
+  }
+
+  .testimonial-author {
+    font-weight: bold;
+    font-size: 0.8rem; /* Smaller author text */
+  }
+
+  /* Contact Form Section */
+  .contact {
+    background: white;
+    padding: 20px 10px;
   }
 
   .contact form {
+    display: flex;
+    flex-direction: column;
     max-width: 100%;
-    padding: 10px;
+  }
+
+  .contact input,
+  .contact textarea {
+    font-size: 0.8rem; /* Smaller input font size */
+    padding: 8px;
+    margin: 5px 0;
+  }
+
+  .contact button {
+    font-size: 0.8rem; /* Smaller button font size */
+    padding: 8px 16px;
+    background: #f89c1c;
+    color: white;
   }
 
   footer {
-    padding: 10px 0;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 8px 0; /* Reduced padding */
+  }
+
+  /* Ensure all sections are stacked and visible */
+  .project, .about, .contact, .testimonial-card {
+    width: 100%;
+    margin: 10px auto; /* Center elements and ensure they're full width */
+  }
+
+  .project-list,
+  .testimonial-card {
+    padding: 0;
+  }
+
+  /* Remove excessive margins/paddings */
+  .about p {
+    margin: 0;
+  }
+
+  .contact button:hover {
+    background: #e88e1d;
   }
 }
+
 
 /* Tablet (max-width: 768px) */
 @media (max-width: 768px) {
