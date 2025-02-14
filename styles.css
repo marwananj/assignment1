@@ -230,11 +230,11 @@ footer {
 
 /* Responsive Design */
 
-/* Mobile (max-width: 480px) */
-@media (max-width: 480px) {
+/* Mobile (max-width: 280px) */
+@media (max-width: 280px) {
   .nav-links {
     display: block;
-    margin-top: 15px;
+    margin-top: 10px;
   }
 
   .nav-links li {
