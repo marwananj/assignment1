@@ -20,22 +20,26 @@ header {
 
 nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
+  position: relative;
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
+  margin-left: 0; /* Reset margin */
+  padding-left: 180px; /* Moves logo left without using negative values */
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   gap: 15px;
+  margin-left: auto; /* Pushes to the right */
+  padding-right: 180px; /* Moves links right */
 }
 
 .nav-links li {
@@ -56,10 +60,13 @@ nav {
     align-items: center;
   }
 
+  .logo {
+    padding-left: 0;
+  }
+
   .nav-links {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    padding-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -90,12 +97,13 @@ nav {
   font-weight: bold;
   border-radius: 5px;
   margin-top: 10px;
-  transition: background 0.3s ease, color 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
 
 .btn:hover {
   background: #f89c1c;
   color: white;
+  transform: scale(1.05);
 }
 
 /* Responsive Hero */
