@@ -28,13 +28,13 @@ nav {
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-left: -180px; /* Restores the negative margin for the logo */
+  margin-left: -180px;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  margin-right: -180px; /* Aligns nav items to match the logo position */
+  margin-right: -180px;
 }
 
 .nav-links li {
@@ -45,16 +45,17 @@ nav {
   text-decoration: none;
   color: white;
   font-size: 1rem;
+  transition: color 0.3s ease;
 }
 
 /* Hero Section */
 .hero {
   background-color: #f89c1c;
   color: white;
-  padding: 50px 40px; /* Adds space inside the Hero section */
-  margin-left: 20px; /* Adds space to the left of the Hero section */
-  margin-right: 20px; /* Adds space to the right of the Hero section */
-  margin-top: 20px; /* Adds space between Navbar and Hero */
+  padding: 50px 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 
 .hero h1 {
@@ -76,6 +77,12 @@ nav {
   font-weight: bold;
   border-radius: 5px;
   margin-top: 10px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background: #f89c1c;
+  color: white;
 }
 
 /* About Section */
@@ -93,6 +100,7 @@ nav {
   font-size: 1rem;
   max-width: 800px;
   margin: 10px auto;
+  line-height: 1.6;
 }
 
 /* Projects Section */
@@ -123,91 +131,180 @@ nav {
 .project h3 {
   font-size: 1.2rem;
 }
+
 /* Testimonials Section */
 .testimonials {
-    background: #f4f4f4;
-    padding: 50px 20px;
-    text-align: center;
+  background: #f4f4f4;
+  padding: 50px 20px;
+  text-align: center;
 }
 
 .testimonials h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .testimonial-card {
-    max-width: 600px;
-    margin: auto;
-    padding: 30px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  max-width: 600px;
+  margin: auto;
+  padding: 30px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .testimonial-img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background: #ddd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.9rem;
-    font-weight: bold;
-    color: #666;
-    margin-bottom: 15px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 15px;
 }
 
 .testimonial-text {
-    font-style: italic;
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 10px;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .testimonial-author {
-    font-weight: bold;
-    font-size: 1rem;
-    color: #666;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #666;
 }
 
+/* Contact Form Section */
+.contact {
+  background: white;
+  padding: 50px 20px;
+}
 
-/* Add your contact form styles here */
 .contact form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
 }
 
 .contact input, .contact textarea {
-    margin: 10px 0;
-    padding: 10px;
-    width: 100%;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 .contact button {
-    background: #f89c1c;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  background: #f89c1c;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-/* Add your footer styles here */
+.contact button:hover {
+  background: #e88e1d;
+}
+
+/* Footer Section */
 footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 20px;
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
 }
 
-/* Add your responsive design styles here */
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Navbar - Stacked */
+  .nav-links {
+    display: block;
+    margin-top: 15px;
+  }
+
+  .nav-links li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    margin-left: 0; /* Remove negative margin for smaller screens */
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  /* Project Cards - Stack on Small Screens */
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    width: 90%; /* Take up more width on smaller screens */
+    margin-bottom: 20px;
+  }
+
+  /* Testimonials Section */
+  .testimonial-card {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .contact form {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust font size for very small screens */
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .about h2, .projects h2, .testimonials h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact input, .contact textarea {
+    padding: 12px;
+  }
+
+  .contact button {
+    padding: 12px;
+  }
+}
