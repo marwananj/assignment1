@@ -293,13 +293,9 @@ h2 {
     .about p {
         font-size: 0.85rem;
     }
-  .project-list {
-        width: 100%;
-        align-items: center;
-    }
 
-    .project {
-        width: 95%;
+    .project-list {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     }
 
     footer {
