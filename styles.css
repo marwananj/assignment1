@@ -159,18 +159,30 @@ nav {
   margin-bottom: 20px;
 }
 
-.testimonial-card {
+.testimonial-container {
+  position: relative;
   max-width: 600px;
   margin: auto;
-  padding: 30px;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 200px; /* Adjust height as needed */
+  overflow: hidden;
 }
 
+/* Individual Testimonial */
+.testimonial-card {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Active Testimonial (Visible) */
+.testimonial-card.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Testimonial Image (Placeholder Circle) */
 .testimonial-img {
   width: 80px;
   height: 80px;
@@ -179,12 +191,14 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #666;
+  margin: auto;
   margin-bottom: 15px;
 }
 
+/* Testimonial Text */
 .testimonial-text {
   font-style: italic;
   font-size: 1.2rem;
@@ -192,6 +206,7 @@ nav {
   margin-bottom: 10px;
 }
 
+/* Testimonial Author */
 .testimonial-author {
   font-weight: bold;
   font-size: 1rem;
@@ -264,7 +279,7 @@ h2 {
 
     .hero {
         padding: 1.5rem 5%;
-        margin: 80px 45px 10px;
+        margin: 80px 40px 10px;
     }
 
     .hero h1 {
@@ -278,9 +293,13 @@ h2 {
     .about p {
         font-size: 0.85rem;
     }
+  .project-list {
+        width: 100%;
+        align-items: center;
+    }
 
-    .project-list {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    .project {
+        width: 95%;
     }
 
     footer {
