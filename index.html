@@ -58,10 +58,24 @@
         <!-- Testimonials Section -->
         <section id="testimonials" class="testimonials">
             <h2>What People Say</h2>
-            <div class="testimonial-card">
-                <div class="testimonial-img">User Pic</div>
-                <p class="testimonial-text">"This is the best service I have ever used!"</p>
-                <span class="testimonial-author">- Jane Doe</span>
+            <div class="testimonial-container">
+                <div class="testimonial-card active">
+                    <div class="testimonial-img">A</div>
+                    <p class="testimonial-text">"Amazing service and support!"</p>
+                    <span class="testimonial-author">- John Doe</span>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-img">B</div>
+                    <p class="testimonial-text">"A great experience, highly recommend!"</p>
+                    <span class="testimonial-author">- Jane Smith</span>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-img">C</div>
+                    <p class="testimonial-text">"Superb work! Exceeded expectations!"</p>
+                    <span class="testimonial-author">- Alex Johnson</span>
+                </div>
             </div>
         </section>
 
@@ -83,8 +97,23 @@
     </footer>
 
     <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- JavaScript for Automatic Testimonial Slider -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let index = 0;
+            const testimonials = document.querySelectorAll(".testimonial-card");
+
+            function showNextTestimonial() {
+                testimonials[index].classList.remove("active");
+                index = (index + 1) % testimonials.length;
+                testimonials[index].classList.add("active");
+            }
+
+            setInterval(showNextTestimonial, 3000); // Change every 3 seconds
+        });
+    </script>
 
     <script src="index.js"></script>
 
